@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;  
   background: purple;
-  color:grey;
+  color:rgb(255, 255, 80);
 }
 
 body {
@@ -224,4 +224,16 @@ button:hover {
 .fa-rss {
   background: #ff6600;
   color: purple;
+}
+
+.link, a {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: bold;
 }

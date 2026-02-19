@@ -41,48 +41,50 @@ Réponse:
 3. `aria-expanded="true"` (ou `false`) : Indique à l'utilisateur si un élément repliable (comme un menu déroulant ou un accordéon) est actuellement ouvert ou fermé.
 
 # Q6: Ajouter le screen de votre score Lighthouse
-Screen:
-*(Insérez votre capture d'écran ici. En Markdown, vous pouvez utiliser la syntaxe suivante :)*
-![Mon score Lighthouse](chemin/vers/mon_image.png)
+Screen: ![Mon score Lighthouse](/workspaces/miage-numres-step4/assets/Accessibility.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
-Réponse:
+Réponse:l’une des meilleures pratiques ARIA est de ne pas utiliser ARIA lorsque ce n’est pas nécessaire, car les éléments HTML natifs possèdent déjà des rôles et comportements accessibles intégrés. Ajouter de l’ARIA inutilement peut créer des conflits, perturber les lecteurs d’écran et réduire l’accessibilité. On n’utilise ARIA que lorsqu’il n’existe pas d’équivalent HTML sémantique fiable.
 
 # Q8: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![Mon score Lighthouse](/workspaces/miage-numres-step4/assets/Access.png)
 
 # Q9: Pourquoi le score de lighthouse n'a pas augmenté d'après vous ?
-Réponse:
+Réponse:le score Lighthouse n'a pas augmenter car le HTML contenait de nombreux liens sans texte (icônes FontAwesome), aucune balise sémantique, une image sans attribut alt, et aucune indication ARIA pour les zones mises à jour dynamiquement. Lighthouse considère ces éléments comme des problèmes d’accessibilité, ce qui a fait chuter le score.
 
 # Q10: Quel est la valeur du rapport de contraste actuel :
-Réponse:
+Réponse: 2.35
 
 # Q11: Quel est la valeur du score AA :
-Réponse:
+Réponse:3.0
 
 # Q12: Quel est la valeur du score AAA :
-Réponse:
+Réponse:4.5
 
 # Q13: Comment pouvez vous changer la valeur du contraste de votre texte ?
-Réponse:
+Réponse: En modifiant la couleur du texte ou du fond pour augmenter la différence de luminosité entre les deux.
 
 # Q14: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![Mon score Lighthouse](/workspaces/miage-numres-step4/assets/color_Access.png)
 
 # Q15: Êtes vous capable de déterminer visuellement ce qui est un lien ou pas en appliquant chaque altérations ?
-Réponse:
+Réponse: Non. Avec les altérations visuelles (vision floue, protanopie, tritanopie, achromatopsie, etc.), il devient très difficile — voire impossible — d’identifier visuellement ce qui est un lien si celui‑ci n’a pas d’indicateur clair autre que la couleur.
+Lorsque le contraste est faible ou que la couleur est altérée, les liens ressemblent à du texte normal. Sans soulignement, sans icône, sans changement de style au survol, un utilisateur ayant une déficience visuelle ne peut plus distinguer les liens du reste du texte.
 
 # Q16: Ajouter le screen de votre score Lighthouse
-Screen:
+Screen: ![Mon score Lighthouse](/workspaces/miage-numres-step4/assets/contraste.png)
 
-# Q17:  Proposition 1
-Description:
-Nb d'actions gagnée : 
+# Q17 : Proposition 1
+Description : Focus automatique sur la nouvelle question après validation.
+Nb d'actions gagnées : 2 à 3 par question.
 
-# Q18:  Proposition 2
-Description:
-Nb d'actions gagnée : 
 
-# Q19:  Proposition 3
-Description:
-Nb d'actions gagnée : 
+# Q18 : Proposition 2
+Description : Ajout de tabindex="0" sur les propositions pour une navigation clavier linéaire.
+Nb d'actions gagnées : 1 à 2 par question.
+
+
+# Q19 : Proposition 3
+Description : Utilisation de aria-live="assertive" pour annoncer automatiquement la nouvelle question.
+Nb d'actions gagnées : 1 action par changement de question.
+
