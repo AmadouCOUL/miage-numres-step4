@@ -27,11 +27,23 @@ C'est pourquoi une analyse automatisée doit obligatoirement être complétée p
 # Q4: Combien de fois vous devez utiliser une touche du clavier pour passer le quizz ?
 Réponse:7
 
-# Q5: Donner 3 roles ARIA et 3 propriété ARIA
+# Q5: Donner 3 roles ARIA et 3 propriétés ARIA
 Réponse:
+
+**3 Rôles ARIA :**
+1. `role="button"` : Indique aux lecteurs d'écran qu'un élément (comme une simple `<div>` ou un `<span>`) se comporte comme un bouton cliquable.
+2. `role="navigation"` : Définit une zone de la page qui contient des liens de navigation (comme le menu principal).
+3. `role="alert"` : Signale un message d'erreur ou une information importante (ex: "Mot de passe incorrect") qui doit être lu immédiatement par la synthèse vocale.
+
+**3 Propriétés ARIA  :**
+1. `aria-label="texte"` : Permet de donner un nom (une étiquette vocale) à un élément qui n'a pas de texte visible (par exemple, un bouton qui ne contient qu'une icône `X` pour fermer).
+2. `aria-hidden="true"` : Demande aux lecteurs d'écran d'ignorer complètement cet élément (très utile pour les icônes purement décoratives comme FontAwesome afin de ne pas polluer la lecture).
+3. `aria-expanded="true"` (ou `false`) : Indique à l'utilisateur si un élément repliable (comme un menu déroulant ou un accordéon) est actuellement ouvert ou fermé.
 
 # Q6: Ajouter le screen de votre score Lighthouse
 Screen:
+*(Insérez votre capture d'écran ici. En Markdown, vous pouvez utiliser la syntaxe suivante :)*
+![Mon score Lighthouse](chemin/vers/mon_image.png)
 
 # Q7: L'une des best practice de l'ARIA est "ne pas utiliser l'ARIA" pouvez nous expliquer pourquoi d'après vous ?
 Réponse:
